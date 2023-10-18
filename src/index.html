@@ -47,15 +47,16 @@
                 <label for="name">Имя и фамилия</label>
                 <input type="text" id="name" name="name" placeholder="Саша Фефелов" class="name"/>
                 <h1 class = "gender">
-                    <div class="male">
-                        <input id = "man" type="radio" value="man" checked name="gender"/>
-                        <label for="man">Парень</label>
-                    </div>
-                    <div class="female">
-                        <input id = "woman" type="radio" value="woman" name="gender"/>
-                        <label for="man">Девушка</label>
-
-                    </div>
+                        <label class = "male">
+                            <input id = "man" type="radio" value="man" checked name="gender" class = "real-radio"/>
+                            <span class="custom-radio"></span>
+                            Парень
+                        </label>
+                        <label class = "female">
+                            <input id = "woman" type="radio" value="woman" name="gender" class = "real-radio"/>
+                            <span class="custom-radio"></span>
+                            Девушка
+                        </label>
                 </h1>
             </div>
             <input type="date" id="start" name="trip-start" class="date"/>
@@ -140,7 +141,7 @@
 
     </main>
     <aside>
-        <a href="https://t.me/zdorovobitkotom" class = "kittens">Прикольные картинки с милыми котиками(рикролла нет можете проверить)</a>
+        <a href="https://t.me/zdorovobitkotom" class = "kittens">Прикольные картинки с милыми котиками(рикролла нет можете открывать)</a>
     </aside>
     <footer class="footer">
         <div class = techinfo>
