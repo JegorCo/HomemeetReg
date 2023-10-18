@@ -444,6 +444,16 @@ textarea{
     font-weight: 600;
     line-height: 10px; /* 125% */
     letter-spacing: -0.08px;
+    transition: 1s;
+
+}
+
+.showcontacts:hover{
+    color:#7953C3;
+    background: #FFF;
+    border-color: #7953C3;
+    border: 1px solid var(--7953-c-3-purple-main, #7953C3);
+    transition: 1s;
 }
 
 .myname{
@@ -866,8 +876,18 @@ textarea{
 	box-sizing: border-box;
 	border: none;
 	margin: 0;
-	transition: background-color 0.2s;
+	transition: 1s;
 }
+
+.input-file span:hover{
+    color:#7953C3;
+    background: #FFF;
+    border-color: #7953C3;
+    border: 1px solid var(--7953-c-3-purple-main, #7953C3);
+    transition: 1s;
+}
+
+
 .input-file input[type=file] {
 	position: absolute;
 	z-index: -1;
@@ -908,16 +928,11 @@ aside{
 }
 
 .real-radio {
-    /* Скрываем реальную радио кнопку*/
     width: 0;
 	height: 0;
 	position: absolute;
     opacity: 0;
     z-index: -1;
-
-    /*
-    display: none; - использовать нельзя, потому что не будет работать табуляция!
-    */
 }
 
 .custom-radio {
@@ -928,20 +943,16 @@ aside{
 	background: #ffffff;
 	border: 1px solid #7953C3;
 	border-radius: 50%;
-	/* vertical-align: text-top; */
 }
 
 .custom-radio::before {
 	content: '';
-
-	/* Рисуем круг */
 	display: inline-block;
 	width: 9px;
 	height: 9px;
 	background: #7953C3;
 	border-radius: 100%;
 
-	/* Выравниваем по центру */
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -949,11 +960,9 @@ aside{
 
     transition: 0.2s ease-in;
 
-    /* display: none; */
 }
 
 .real-radio:checked + .custom-radio::before {
-    /* display: block; */
     transform: translate(-50%, -50%) scale(1);
 }
 
